@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanika Yewale | Portfolio</title>
+
+<style>
+:root{
+  --primary:#ac2763;
+  --light:#ffffff;
+    --secondary:#ffffff;
+  --dark:#1f1f1f;
+}
+
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:var(--light);
+}
+
+/* NAVBAR */
+.navbar{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:var(--primary);
+  padding:15px;
+  text-align:center;
+  z-index:1000;
+}
+
+.navbar a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.navbar a:hover{
+  border-bottom:2px solid white;
+}
+
+/* HERO */
+.main{
+  width:100vw;
+  height:100vh;
+  background:var(--primary);
+  position:relative;
+  padding-top:80px;
+}
+
+.sub1{
+  position:absolute;
+  top:10vh;
+  left:15vw;
+  width:70vw;
+  height:80vh;
+  background:var(--light);
+  border-radius:80px 20px;
+}
+
+.sub2{
+  position:absolute;
+  top:22vh;
+  left:20vw;
+  width:32vw;
+  height:auto;
+  background:var(--primary);
+  border-radius:80px 20px;
+  padding:30px;
+  color:white;
+}
+
+.sub2 h1{
+  font-size:22px;
+}
+
+.sub2 p{
+  font-size:15px;
+  line-height:1.5;
+}
+
+.primary-btn{
+  margin-top:20px;
+  width:180px;
+  height:40px;
+  background:white;
+  color:var(--primary);
+  font-size:16px;
+  border:none;
+  border-radius:25px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+
+.sub3, .sub4{
+  position:absolute;
+  top:25vh;
+  right:18vw;
+  width:30vw;
+  height:50vh;
+  background:var(--primary);
+  border-radius:80px 20px;
+}
+
+.sub3 img, .sub4 img{
+  width:90%;
+  height:90%;
+  margin:5%;
+  border-radius:80px 20px;
+  border:3px solid white;
+}
+.sub4 {
+  display:none; 
+  position: absolute;
+  top:25vh;
+  right:18vw;
+  width:30vw;
+  height:50vh;
+  background:var(--primary);
+  border-radius:80px 20px;
+}
+.sub4 h5{
+  color:white;
+  font-size:19px;
+  line-height:1.5;
+  padding:25px;
+}
+
+/* SECTIONS */
+.section{
+  padding:80px 120px;
+}
+
+.section h2{
+  color:var(--primary);
+  margin-bottom:20px;
+}
+
+/* FOOTER */
+footer{
+  background:var(--primary);
+  color:white;
+  text-align:center;
+  padding:40px;
+}
+.card{
+  background:var(--secondary);
+  border:2px solid var(--primary);
+  padding:20px;
+  border-radius:15px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.08);
+  opacity:0;
+  transform:translateY(30px);
+  transition:0.6s;
+}
+.card{
+  color:var(--primary);
+  border-color:var(--secondary);
+}
+.card.show{
+  opacity:1;
+  transform:translateY(0);
+}
+#exploreBtn {
+  transition: all 0.6s ease;
+}
+
+.move-to-sub4 {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+</style>
+</head>
+
+<body>
+
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#skills">Skills</a>
+  <a href="#education">Education</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<div class="main" id="home">
+  <div class="sub1"></div>
+
+  <div class="sub2">
+    <h1 id="heading1">Hi, I'm Sanika Yewale</h1>
+    <h1 id="heading2">Computer Engineer (AIML)</h1>
+    <h4 id="heading3">
+      Mobile App Developer | Web Developer | Research Author </h4> 
+      <h4>
+      Hands-on experience in Android Studio, Kotlin, Java,
+      API integration  and & UI design.
+      </h4>
+<button id="exploreBtn" class="primary-btn" onclick="changeContent()">Explore</button>
+  </div>
+
+  <div class="sub3" id="sub3">
+    <img src="https://cdn.gamma.app/ak47jra36rq3y4o/generated-images/wa3fl4ZD3PwWpOa0s9X5N.png">
+  </div>
+
+  <div class="sub4" id="sub4">
+  <h5>Computer engineer, Mobile application developer with hands-on experience in Android Studio, Kotlin and Java, API integration and UI
+design. Built real-time projects including a Weather Forecast App and a Voice & Virtual Command System. Published research paper in
+IRJMETS (2025). Focused on building practical solutions, not just theory.</h5>
+  </div>
+</div>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2>Technical Skills</h2>
+<div class="card">
+  <p><b>Frontend:</b> HTML, CSS, JavaScript</p></div>
+  <div class="card"><p><b>Programming:</b> Java, C++, Kotlin, C, DBMS</p></div>
+  <div class="card"><p><b>Mobile Development:</b> Android Studio</p></div>
+  <div class="card"><p><b>AI / ML:</b> Voice Recognition, Gesture Recognition</p></div>
+  <div class="card"><p><b>Tools:</b> Git, VS Code, R Studio</p></div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>Class 10th</h3>
+    <p>Acharya Shri Anand Rushiji English Medium School</p>
+    <p>Percentage: <strong>93%</strong></p>
+  </div>
+  <div class="card">
+    <h3>Diploma in Computer Engineering</h3>
+    <p>Pimpri Chinchwad Polytechnic Pune</p>
+    <p>Percentage: <strong>95.18%</strong></p>
+  </div>
+  <div class="card">
+    <h3>B.E. in Computer Science Engineering</h3>
+    <p>Pimpri Chinchwad College Of Engineering Pune</p>
+    <p>Currently Pursuing</p>
+  </div>
+</section>
+<section id="achievements" class="section">
+  <h2>Achievements</h2>
+  <ul>
+    <div class="card"><li><b>2nd Rank</b> – Secured 2nd Rank in Techlons Code Marathon conducted
+by College; received an award for outstanding performance. (College Level)</li></div>
+    <div class="card"><li><b>2nd Rank</b> – Achieved 2nd Rank in Diploma Final Year (Computer
+Engineering).</li></div>
+    <div class="card"><li><b>2nd Rank</b> – Secured 2nd Rank in 10th Board Examination at school
+level. (School Level)</li></div>
+    <div class="card"><li><b>Winner</b> – Winner of Inter-School Group Dance Competition, served as
+the lead performance of the team.</li></div>
+    <div class="card"><li>Published <b>Research Paper in IRJMETS (2025)</b> on Voice-Based Automation (Voice & Virtual Command System)</li></div>
+  </ul>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+<h2>Internship</h2>
+<div class="card">
+<p><b>Frontend Developer Intern – SpurQlabs Technologies</b></p></div>
+<div class="card">
+<ul>
+    <li>Full Stack Developer</li>
+  <li>Developed responsive UI using HTML/CSS/JS</li>
+  <li>Worked on Profile & Home modules</li>
+  <li>Collaborated using Git</li>
+</ul></div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Voice & Virtual Command System</h3>
+    <p><b>Tech:</b> Python, AI</p>
+    <p>The Voice and Virtual Command System is an advanced project
+aimed at integrating voice recognition technology with virtual
+commands to enable hands-free, seamless interactions. By
+leveraging speech-to-text APIs and machine learning, the system
+allows users to perform tasks such as controlling devices,
+retrieving information, or managing schedules using simple voice
+commands.</p>
+  </div>
+  <div class="card">
+    <h3>Medical Store Stock Management System</h3>
+    <p><b>Tech:</b> PHP, MySQL</p>
+    <p>Manages inventory, billing, stock alerts, and reports.</p>
+  </div>
+  <div class="card">
+    <h3>ML-Based Gesture Controlled Presentation and
+Annotation System</h3>
+<p>Implemented a deep-learning based gesture-recognition system
+for real-time presentation control and annotation. Added
+wearable-tech integration with smart-glasses for script display
+and emotion-driven suggestions to improve presenter efficiency.</p>
+  </div>
+  <div class="card">
+    <h3>Amazon clone</h3>
+    <p>Developed a clone of amazon e-commerce website home page .</p>
+  </div>
+</section>
+
+<section id="languages" class="section">
+  <h2>Languages</h2>
+  <ul>
+    <div class="card"><li>English – Full Professional Proficiency</li></div>
+    <div class="card"><li>Hindi – Professional Working Proficiency</li></div>
+    <div class="card"><li>Marathi – Native / Bilingual</li></div>
+  </ul>
+</section>
+
+<!-- CONTACT -->
+<footer id="contact">
+  <h2>Contact</h2>
+  <p>Email: <b>yewalesanika66@gmail.com</b></p>
+  <p>Phone: <b>7387055310</b></p>
+  <p>Location: Pune, India</p>
+  <p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/in/sanika-yewale-b64933318" target="_blank" style="color:white;">
+      sanika-yewale
+    </a>
+  </p>
+</footer>
+
+
+<script>
+    document.querySelectorAll("nav a").forEach(link => {
+  link.addEventListener("click", e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+const revealItems = document.querySelectorAll(".card");
+
+window.addEventListener("scroll", () => {
+  revealItems.forEach(item => {
+    const pos = item.getBoundingClientRect().top;
+    if (pos < window.innerHeight - 100) {
+      item.classList.add("show");
+    }
+  });
+});
+let explored = false;
+
+function changeContent() {
+  const btn = document.getElementById("exploreBtn");
+
+  if (!explored) {
+    // FIRST CLICK → change content
+    document.getElementById("heading1").innerText = "Computer Engineer (AIML)";
+    document.getElementById("heading2").innerText = "Frontend | Android | AI Projects";
+    document.getElementById("heading3").innerText =
+      "Published Research Paper in IRJMETS (2025).\nIntern at SpurQlabs Technologies.\nFocused on real-world problem solving.";
+
+    document.getElementById("sub3").style.display = "none";
+    document.getElementById("sub4").style.display = "block";
+
+    // 🔴 MOVE BUTTON INTO sub4
+    document.getElementById("sub4").appendChild(btn);
+    btn.classList.add("move-to-sub4");
+    btn.innerText = "View Skills";
+
+    explored = true;
+  } 
+  else {
+    // SECOND CLICK → scroll
+    document.getElementById("skills")
+      .scrollIntoView({ behavior: "smooth" });
+  }
+}
+
+</script>
+
+</body>
+</html>
