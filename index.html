@@ -174,48 +174,42 @@ footer{
   left: 50%;
   transform: translateX(-50%);
 }
-/* =======================
-   MOBILE RESPONSIVE FIX
-   ======================= */
+/* RESPONSIVE MOBILE FIX */
 @media (max-width: 768px) {
 
   body {
     overflow-x: hidden;
   }
 
-  .navbar {
-    padding: 10px;
+  /* Make navbar links smaller + wrap */
+  .navbar a {
+    margin: 0 8px;
     font-size: 14px;
   }
 
-  .navbar a {
-    margin: 0 8px;
-  }
-
-  /* HERO RESET */
+  /* HERO SECTION */
   .main {
     height: auto;
-    padding: 100px 20px 40px;
+    padding: 120px 15px 50px;
   }
 
+  /* Remove decorative shape on mobile */
   .sub1 {
-    display: none; /* decorative shape not needed on mobile */
+    display: none;
   }
 
-  .sub2,
-  .sub3,
-  .sub4 {
-    position: static;
-    width: 100%;
-    height: auto;
-    margin: 20px 0;
-    border-radius: 30px;
-  }
-
-  .sub2 {
+  /* Make content flow vertically */
+  .sub2, .sub3, .sub4 {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 15px;
+    border-radius: 25px;
+    padding: 15px;
     text-align: center;
   }
 
+  /* Reduce text size for readability */
   .sub2 h1 {
     font-size: 20px;
   }
@@ -224,46 +218,41 @@ footer{
     font-size: 14px;
   }
 
-  .primary-btn {
-    margin: 20px auto 0;
+  .primary-btn, .move-to-sub4 {
+    margin: 20px auto;
     display: block;
+    width: 80%;
   }
 
-  .sub3 img {
+  /* Keep images responsive */
+  .sub3 img, .sub4 img {
     width: 100%;
     height: auto;
+    border-radius: 15px;
     margin: 0;
-    border-radius: 20px;
   }
 
   .sub4 h5 {
     font-size: 15px;
-    padding: 20px;
-    text-align: center;
+    padding: 15px;
   }
 
-  .move-to-sub4 {
-    position: static;
-    transform: none;
-    margin: 20px auto 0;
-    display: block;
-  }
-
-  /* SECTIONS */
+  /* SECTION PADDING */
   .section {
-    padding: 50px 20px;
+    padding: 40px 15px;
   }
 
   .section h2 {
     text-align: center;
+    font-size: 22px;
   }
 
   .card {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   footer {
-    padding: 30px 20px;
+    padding: 30px 15px;
     font-size: 14px;
   }
 }
@@ -478,4 +467,5 @@ function changeContent() {
 
 </body>
 </html>
+
 
