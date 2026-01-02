@@ -174,6 +174,99 @@ footer{
   left: 50%;
   transform: translateX(-50%);
 }
+/* =======================
+   MOBILE RESPONSIVE FIX
+   ======================= */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .navbar a {
+    margin: 0 8px;
+  }
+
+  /* HERO RESET */
+  .main {
+    height: auto;
+    padding: 100px 20px 40px;
+  }
+
+  .sub1 {
+    display: none; /* decorative shape not needed on mobile */
+  }
+
+  .sub2,
+  .sub3,
+  .sub4 {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 30px;
+  }
+
+  .sub2 {
+    text-align: center;
+  }
+
+  .sub2 h1 {
+    font-size: 20px;
+  }
+
+  .sub2 h4 {
+    font-size: 14px;
+  }
+
+  .primary-btn {
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .sub3 img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 20px;
+  }
+
+  .sub4 h5 {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .move-to-sub4 {
+    position: static;
+    transform: none;
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  /* SECTIONS */
+  .section {
+    padding: 50px 20px;
+  }
+
+  .section h2 {
+    text-align: center;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    padding: 30px 20px;
+    font-size: 14px;
+  }
+}
 
 </style>
 </head>
@@ -385,3 +478,4 @@ function changeContent() {
 
 </body>
 </html>
+
